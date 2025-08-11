@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap');
 
 /* @tailwind base;
 @tailwind components;
@@ -43,21 +44,23 @@ body {
   color: var(--c);
   font-family: var(--font-primary);
   line-height: 1.6;
-  letter-spacing: 8%;
+  letter-spacing: 10%;
   overflow-x: hidden;
   font-size: 1rem;
+  /* cursor: url(./resources/cursor.cur), auto ; */
 }
 
 a {
   text-decoration: none;
   color: var(--text-secondary);
+  /* cursor: url(./resources/cursor-2.cur), auto; */
 }
 
 button, .profile-image label {
   background-color: var(--accent);
   color: var(--primary);
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: url(./resources/cursor-2.cur), auto; */
   font-family: var(--font-primary);
   font-variation-settings: "wght" 400;
   font-weight: 400;
@@ -302,7 +305,7 @@ button:hover, .profile-image label:hover {
   background: var(--accent);
   color: var(--primary);
   border: none;
-  cursor: pointer;
+  /* cursor: url(./resources/cursor-2.cur), auto; */
 }
 
 .features-section {
@@ -344,6 +347,20 @@ button:hover, .profile-image label:hover {
   align-items: center;
   text-align: center;
 }
+
+/* @keyframes rain {
+  0% { border: 3rem solid red; }
+  16% { border: 3rem solid orange; }
+  33% { border: 3rem solid  yellow; }
+  50% { border: 3rem solid  green; }
+  66% { border: 3rem solid  rgb(67, 67, 255); }
+  83% { border: 3rem solid  rgb(130, 17, 210); }
+  100% { border: 3rem solid  violet; }
+}
+
+.feature-card:hover {
+  animation: rain 1.5s linear infinite alternate;
+} */
 
 .feature-title {
   word-break: break-word;
@@ -455,7 +472,7 @@ button:hover, .profile-image label:hover {
   flex-direction: column;
   align-items: center;
   text-align: center; */
-  cursor: pointer;
+  /* cursor: url(./resources/cursor-2.cur), auto; */
 }
 
 .custom-button-heading {
@@ -580,7 +597,6 @@ button:hover, .profile-image label:hover {
   color: var(--text-secondary);
   font-size: .9rem;
   margin: .1rem;
-  margin-top: 1rem;
   border-radius: 20px;
   padding: 2%;
 }
@@ -842,7 +858,6 @@ button:hover, .profile-image label:hover {
     background: var(--accent);
     color: var(--primary);
     border: none;
-    cursor: pointer;
   }
 
   .features-section {
