@@ -51,6 +51,7 @@ export default function Forums() {
     const nameD = document.createElement('h2');
     const restD = document.createElement('h3');
     const input = document.createElement('img');
+    const info = document.createElement('div');
 
     if(reversedforumData[index].profile_image == null) {
         profileImage = defaultProfile;
@@ -58,10 +59,6 @@ export default function Forums() {
     else {
         profileImage = reversedforumData[index].profile_image;
       }
-    input.src = profileImage;
-    input.style.width = '50px';
-    input.style.height = '50px';
-    header.appendChild(input);
 
     postDiv.className = 'custom-forum-content';
     postDiv.style.backgroundColor = '#f9c74f';
@@ -79,11 +76,9 @@ export default function Forums() {
         profileImage = reversedforumData[index].profile_image;
       }
     input.src = profileImage;
-    input.style.width = '50px';
-    input.style.height = '50px';
-    header.appendChild(input);
-    header.appendChild(nameD);
-    header.appendChild(restD);
+    input.style.width = '8vh';
+    input.style.height = '8vh';
+    input.style.borderRadius ='50%'
 
     nameD.style.fontWeight = 'bold';
     nameD.style.fontSize = "1.125rem"
@@ -94,11 +89,20 @@ export default function Forums() {
     title.textContent = `${reversedforumData[index].title}`;
     title.style.textDecoration = 'underline';
     message.textContent = `${reversedforumData[index].message}`;
+    info.style.width = '100%'
+    info.style.marginLeft = '5%'
+    postDiv.style.display = 'flex'
+    postDiv.style.flexDirection = 'flex-start'
+    postDiv.style.alignItems = 'center'
     postDiv.style.padding = '3%';
 
-    postDiv.appendChild(header);
-    postDiv.appendChild(title);
-    postDiv.appendChild(message);    
+    postDiv.appendChild(input);
+    header.appendChild(nameD);
+    header.appendChild(restD);
+    info.appendChild(header);
+    info.appendChild(title);
+    info.appendChild(message);    
+    postDiv.appendChild(info);
     displayPost.appendChild(postDiv);
 
     if(replyData[0].responses !== null) {
@@ -109,6 +113,7 @@ export default function Forums() {
         const nameD = document.createElement('h2');
         const restD = document.createElement('h3');
         const input = document.createElement('img');
+        const info = document.createElement('div');
     
         postDiv.className = 'custom-forum-reply';
         const tt = (replyData[0].responses[i].time);
@@ -124,25 +129,35 @@ export default function Forums() {
         else {
           profileImage = replyData[0].responses[i].image;
         }
-        input.src = profileImage;
-        input.style.width = '50px';
-        input.style.height = '50px';
-        header.appendChild(input);
         
+        input.src = profileImage;
+        input.style.width = '8vh';
+        input.style.height = '8vh';
+        input.style.borderRadius ='50%'
+
         nameD.style.fontWeight = 'bold';
         nameD.style.fontSize = "1.125rem"
         restD.style.fontWeight = 'bold';
         header.style.display = 'flex';
         header.style.flexDirection = 'row';
         header.style.justifyContent = 'space-between';
-        // title.style.textDecoration = 'underline';
-        // title.style.fontSize = '1.1rem';
-        
+        info.style.width = '100%'
+        info.style.marginLeft = '5%'
+        postDiv.style.display = 'flex'
+        postDiv.style.flexDirection = 'flex-start'
+        postDiv.style.alignItems = 'center'
+        postDiv.style.padding = '3%';
+
+
+        postDiv.appendChild(input);
         header.appendChild(nameD);
         header.appendChild(restD);
-        postDiv.appendChild(header);
-        postDiv.appendChild(message);    
+        info.appendChild(header);
+        info.appendChild(title);
+        info.appendChild(message);    
+        postDiv.appendChild(info);
         displayPost.appendChild(postDiv);
+
       }
     }
   }
@@ -300,7 +315,7 @@ export default function Forums() {
         </div>
       </aside>
 
-      <div className="main-content">
+      <div className="main-content" style={{width:'100%'}}>
         <div  id ="forum"></div>
         <div className="custom-pagination" style={{justifyContent: 'space-evenly'}}>
           <button className="custom-button" onClick={generateUserSubmission} style={{padding: '.5rem'}}>Create a new post</button>
