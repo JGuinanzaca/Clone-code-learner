@@ -63,7 +63,7 @@
     "id": 6,
     "title": "Terms and Conditions",
     "description": {
-      "default":"Don't fret, we don't want your data. But now that you know so much about ",
+      "default":"Don't fret, we don't want your data. But now that you know so much about numbers and ",
       "challenge":"Write a program that prints out the following triangle when the code is run:<h6>1<br>2 3<br>4 5 6<br>7 8 9 10<br></h6><hr>Hint: print out your message four separate times.",
       "python": "",
       "javascript": "",
@@ -97,9 +97,33 @@
   },
   {
     "id": 9,
+    "title": "...or else if...",
+    "description": {
+      "default":"Theres also ",
+      "challenge":"Write a program that prints out the following triangle when the code is run:<h6>1<br>2 3<br>4 5 6<br>7 8 9 10<br></h6><hr>Hint: print out your message four separate times.",
+      "python": "",
+      "javascript": "",
+      "cpp": ""
+    },
+    "solution": "*\n**\n***\n****\n*****\n******\n********\n"
+  },
+  {
+    "id": 10,
+    "title": "Terms and Conditions",
+    "description": {
+      "default":"Don't fret, we don't want your data. But now that you know so much about numbers and if statements, lets see if you could code this next challenge:",
+      "challenge":"Create a variable that holds the string value of \"my STRING!\". Now, wrie an if-elif-else statement that compares ( double equals == ) it to the following values: <br>1. \"my string\"<br>2. true (boolean)<br>3. ('m'+'y'+' '+'S'+'T'+'R'+'I'+'N'+'G')<br>your action for each statement should be the corresponding ordered number.<br><br>Guess which one it'll be before you try :3",
+      "python": "",
+      "javascript": "",
+      "cpp": ""
+    },
+    "solution": "2\n"
+  },
+  {
+    "id": 11,
     "title": "Triangles... Part 2",
     "description": {
-      "default":"Now that you know how to print out a message to the console, why don't you also go on ahead and do an extra challenge!",
+      "default":"You're getting the hang of this! Let's work on a special coding tool called a LOOP!<br><b>Loops</b> are a ",
       "challenge":"Write a program that prints out the following triangle when the code is run:<h6>1<br>2 3<br>4 5 6<br>7 8 9 10<br></h6><hr>Hint: print out your message four separate times.",
       "python": "",
       "javascript": "",
@@ -118,5 +142,29 @@
       "cpp": ""
     },
     "solution": "*\n**\n***\n****\n*****\n******\n********\n"
+  },
+  {
+    "id": 9,
+    "title": "Triangles... Part 2",
+    "description": {
+      "default":"Now that you know how to print out a message to the console, why don't you also go on ahead and do an extra challenge!",
+      "challenge":"Write a program that prints out the following triangle when the code is run:<h6>1<br>2 3<br>4 5 6<br>7 8 9 10<br></h6><hr>Hint: print out your message four separate times.",
+      "python": "",
+      "javascript": "",
+      "cpp": ""
+    },
+    "solution": "*\n**\n***\n****\n*****\n******\n********\n"
+  },
+  {
+    "id": 20,
+    "title": "Ready to crack open a cold one?",
+    "description": {
+      "default": "Time to learn about loops and conditionals! Loops allow us to repeat code multiple times, while conditionals (if/else statements) let us make decisions in our programs.",
+      "challenge": "Write a program that prints numbers 1 to 15, but with a twist:<br>- Print 'Fizz' for multiples of 3<br>- Print 'Buzz' for multiples of 5<br>- Print 'FizzBuzz' for multiples of both 3 and 5<br>- Print the number itself for all other cases",
+      "python": "In Python, you can use a <b>for loop</b> to repeat code:<h6>for i in range(1, 16):</h6>The <b>%</b> operator gives you the remainder of division. Use <b>if/elif/else</b> statements to check conditions:<h6>if i % 15 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print('FizzBuzz')<br>elif i % 3 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print('Fizz')</h6>",
+      "javascript": "In JavaScript, use a <b>for loop</b> to repeat code:<h6>for (let i = 1; i <= 15; i++) {</h6>The <b>%</b> operator gives you the remainder of division. Use <b>if/else if/else</b> statements:<h6>if (i % 15 === 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('FizzBuzz');<br>} else if (i % 3 === 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log('Fizz');<br>}</h6>",
+      "cpp": "In C++, use a <b>for loop</b> to repeat code:<h6>for(int i = 1; i <= 15; i++) {</h6>The <b>%</b> operator gives you the remainder of division. Use <b>if/else if/else</b> statements:<h6>if (i % 15 == 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;cout << \"FizzBuzz\" << endl;<br>} else if (i % 3 == 0) {<br>&nbsp;&nbsp;&nbsp;&nbsp;cout << \"Fizz\" << endl;<br>}</h6>"
+    },
+    "solution": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n"
   }
 ]
