@@ -125,7 +125,7 @@ export const sendResetEmail = async (email) => {
     );
     return response.data;
   } catch (error) {
-    return response.data;
+    throw "Reset email not working!";
   }
 }
 
